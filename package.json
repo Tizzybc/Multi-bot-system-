@@ -4,9 +4,14 @@
 “description”: “Multi-platform bot with WhatsApp, Telegram, anime scraper and media downloader”,
 “main”: “index.js”,
 “type”: “module”,
+“engines”: {
+“node”: “>=18.0.0”,
+“npm”: “>=9.0.0”
+},
 “scripts”: {
 “start”: “node index.js”,
-“dev”: “nodemon index.js”
+“dev”: “nodemon index.js”,
+“postinstall”: “echo ‘Installation complete’”
 },
 “dependencies”: {
 “whatsapp-web.js”: “^1.23.0”,
